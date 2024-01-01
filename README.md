@@ -6,9 +6,9 @@ Baixar arquivo ou clonar este repositório com o comando:
 ## Servidor
 Execulte o arquivo CinChatServUDP.py para abrir o servidor que será reponsavel pelo gerenciamento do chat.
 Abra um terminal e digite : **python3 CinChatServUDP.py**
-. Siga as instruções do programa.
+- Siga as instruções do programa.
 ## Cliente
 Distribua o arquivo CinChatClientUDP.py para os clientes que desenjam se comunicar atraves do chat.
-Abra um terminal e digite : **python3 CinChatClientUDP.py**
-. Siga as instruções do programa.
+Abra um terminal e digite :  **python3 CinChatClientUDP.py**
+- Siga as instruções do programa.
 
