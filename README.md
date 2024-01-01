@@ -1,2 +1,2 @@
 # ChatUDP
-Projeto da Universidade Federal de Pernambuco (UFPE) da cadeira de redes em Python
+Projeto em Python da Universidade Federal de Pernambuco (UFPE) da cadeira de redes.
