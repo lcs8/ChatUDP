@@ -1,6 +1,6 @@
 import socket
 import os
-
+import threading #Por se tratar de um Chat com múltiplos usuários, precisamos importar a biblioteca threading.
 
 # Create a UDP socket
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -42,10 +42,15 @@ def main():
 
     name = input("ENTER YOUR NAME : ")
     options =str(input('File to be send or quit'))
-    parei aqui agora tem que pegar essa variavel option se ele digitar
-    send pedir a função send_file.
     
-    
+    #Implementação da biblioteca threading para envio e recebimento de mensagens
+    send_thread = threading.Thread(target=send, args=(name, HOST, PORT))
+    receive_thread = threading.Thread(target=received)
+
+    #Iniciar threads
+    send_thread.start()
+    receive_thread.start()
+        
     # Close the socket
     client_socket.close()
 
